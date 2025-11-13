@@ -11,7 +11,7 @@ class Model
   public function __construct()
   {
     // DB connection setup
-    $connectionString = "mongodb+srv://admin:admin@lamadevcluster.etkssv1.mongodb.net/?appName=LamaDevCluster";
+    $connectionString = "";
     $dbName = "lab8_php";
 
     $booksCollectionName = "books";
