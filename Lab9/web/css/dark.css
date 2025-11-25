@@ -1,0 +1,84 @@
+body {
+    background: #181818;
+    color: #e0e0e0;
+    font-family: "Inter", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Center Content Box === */
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #202020;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+}
+
+/* === Headings === */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* === Form Labels === */
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #c8c8c8;
+    font-weight:bold;
+}
+
+/* === Inputs === */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.help-block {
+    color: crimson;
+    margin-bottom: 18px;
+}
+
+/* === Button === */
+.btn-primary {
+    background: #4a70e0;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-primary:hover {
+    background: #6788e6;
+}
+
+/* === Links === */
+a {
+    color: #7aa2ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* === List (entry-confirm.php) === */
+ul {
+    padding-left: 18px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
