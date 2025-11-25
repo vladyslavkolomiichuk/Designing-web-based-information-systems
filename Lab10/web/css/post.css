@@ -1,0 +1,113 @@
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-main: #e0e0e0;
+    --text-muted: #a0a0a0;
+    --accent: #325ed7; 
+    --border-radius: 8px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--accent);
+    font-weight: 300;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.post-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.post-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    border-left: 3px solid var(--accent);
+}
+
+.post-title {
+    margin-top: 0;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.post-text {
+    color: var(--text-muted);
+    line-height: 1.6;
+    font-size: 1.05rem;
+    margin-bottom: 20px;
+}
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.post-date {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination li a, .pagination li span {
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1px solid #333;
+    transition: all 0.3s;
+}
+
+.pagination li.active a {
+    background-color: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+}
+
+.pagination li a:hover {
+    background-color: #333;
+}
+
+.pagination li.disabled span {
+    color: #555;
+    border-color: #333;
+}
