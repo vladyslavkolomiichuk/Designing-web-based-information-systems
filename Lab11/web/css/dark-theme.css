@@ -1,0 +1,63 @@
+/* --- Global Dark Theme --- */
+body {
+    background-color: #121212; /* Deep dark background */
+    color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* --- Custom Navbar --- */
+.navbar {
+    background-color: #1f1f1f !important; /* Slightly lighter than body */
+    border-bottom: 1px solid #333;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #b0b0b0 !important;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #0d6efd !important; /* Blue accent on hover */
+}
+
+/* --- Content Wrapper --- */
+main > .container {
+    padding: 60px 15px 0;
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #1f1f1f;
+    border-top: 1px solid #333;
+    color: #888;
+}
+
+/* --- Auth Containers (from previous step) --- */
+.site-login, .site-signup {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+    margin-top: 30px;
+}
+
+/* Form inputs & buttons (from previous step) */
+.form-control {
+    background-color: #2c2c2c;
+    border: 1px solid #444;
+    color: #fff;
+}
+.form-control:focus {
+    background-color: #333;
+    color: #fff;
+    border-color: #0d6efd;
+}
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+}
